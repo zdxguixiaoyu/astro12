@@ -1,9 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import "../styles/globle.css";
----
+import pages from "../styles/globle.css";
+import NavigationBar from "../components/NavigationBar.astro";
+import Footerdiv from "../components/Footer.astro"
 
+---
 <Layout title="关于我">
     <main>
         <svg
@@ -34,10 +36,8 @@ import "../styles/globle.css";
                 </linearGradient>
             </defs>
         </svg>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-        <a href="/notes/">Notes</a>
+        <NavigationBar />
+       
         <h1>欢迎来到about<span class="text-gradient"></span></h1>
         <h2>
             <span class="text-gradient"> 在这个页面将展示有关我的信息</span>
@@ -108,4 +108,5 @@ import "../styles/globle.css";
             padding: 0;
         }
     </style>
+    <Footerdiv/>
 </Layout>
