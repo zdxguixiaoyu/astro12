@@ -1,138 +1,201 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import NavigationBar from "../components/NavigationBar.astro";
-import Footerdiv from "../components/Footer.astro"
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/home.css";
+import "../styles/global.css";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-		>
-			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-				fill="url(#paint0_linear_1805_24383)"></path>
-			<defs>
-				<linearGradient
-					id="paint0_linear_1805_24383"
-					x1="247.358"
-					y1="0"
-					x2="247.358"
-					y2="622.479"
-					gradientUnits="userSpaceOnUse"
-				>
-					<stop stop-opacity="0.9"></stop>
-					<stop offset="1" stop-opacity="0.2"></stop>
-				</linearGradient>
-			</defs>
-		</svg>
+<!doctype html>
+<html lang="zh">
+    <header class="header">
+        <div class="logo">兰州蜗牛房车网</div>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/">首页</a></li>
+                <li class="nav-item"><a href="/rent">租车</a></li>
+               
+                <li class="nav-item"><a href="/information">资讯</a></li>
+              
+                <li class="nav-item"><a href="/contact">联系我们</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <Header />
+        <main>
+            <main>
+             
+                <div class="image-gallery">
+                
+                    <div class="gallery-row upper-row">
+                    
+                        <div class="gallery-item">
+                            <img
+                                src="https://static.wanfangche.com/21rv/levels/voluntarilyA.png"
+                                alt="图片 1"
+                                class="gallery-image"
+                            />
+                            <h3 class="image-title">自行式A型</h3>
+                        </div>
+                   
+                        <div class="gallery-item">
+                            <img
+                                src="https://static.wanfangche.com/21rv/levels/voluntarilyB.png"
+                                alt="图片 2"
+                                class="gallery-image"
+                            />
+                            <h3 class="image-title">自行式B型</h3>
+                        </div>
+                   
+                        <div class="gallery-item">
+                            <img
+                                src="https://static.wanfangche.com/21rv/levels/commerce.png"
+                                alt="图片 3"
+                                class="gallery-image"
+                            />
+                            <h3 class="image-title">商务房车</h3>
+                        </div>
+                    </div>
 
-		<NavigationBar />
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<h2>P211012542<span class="text-gradient"> <a href="https://ww.baidu.com">张晓雨</a></span></h2>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br
-			/>
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
-			above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+                  
+                    <div class="gallery-row lower-row">
+                  
+                        <div class="gallery-item">
+                            <img
+                                src="https://static.wanfangche.com/21rv/levels/trailerA.png"
+                                alt="图片 4"
+                                class="gallery-image"
+                            />
+                            <h3 class="image-title">拖挂型A型</h3>
+                        </div>
+                    
+                        <div class="gallery-item">
+                            <img
+                                src="https://static.wanfangche.com/21rv/levels/trailerB.png"
+                                alt="图片 5"
+                                class="gallery-image"
+                            />
+                            <h3 class="image-title">拖挂型B型</h3>
+                        </div>
+                 
+                        <div class="gallery-item">
+                            <img
+                                src="https://static.wanfangche.com/21rv/levels/trailerC.png"
+                                alt="图片 6"
+                                class="gallery-image"
+                            />
+                            <h3 class="image-title">拖挂型C型</h3>
+                        </div>
+                    </div>
+                </div>
+            </main>
 
-			/>
-		</ul>
-	</main>
-	<Footerdiv/>
-</Layout>
+            <main>
+             
+                <section class="feature-rv">
+                    <div class="feature-content">
+                        <h2>为什么选择我们的房车</h2>
+                        <p>精选房车，专业服务，让您的旅行更加舒适便捷。</p>
+                    </div>
+                </section>
+            
+            
+                <section class="latest-routes">
+                    <h2>最新路线推荐</h2>
+                    <div class="route-items">
+                       
+                        <article class="route-item">
+                            <div class="route-thumbnail">
+                              
+                                    <a href="https://k.sina.com.cn/article_5889607523_15f0c4763001005609.html" target="_blank">
+                                    <img src="https://p0.ssl.qhimgs1.com/t0115c18412a48a86ca.jpg" alt="路线1" />
+                                    <h3 class="route-title">路线1：川西大环线</h3>
+                                </a>
+                            </div>
+                            <div class="route-details">
+                                <p>神山圣湖间，探寻古蜀秘境，感受自然与历史的交融。</p>
+                            </div>
+                        </article>
+                       
+                        <article class="route-item">
+                            <div class="route-thumbnail">
+                               
+                                    <a href="https://zhuanlan.zhihu.com/p/144305787" target="_blank">
+                                    <img src="https://p1.ssl.qhimgs1.com/sdr/400__/t047851e956513ace3b.jpg" alt="路线2" />
+                                    <h3 class="route-title">路线2：甘青大环线</h3>
+                                </a>
+                            </div>
+                            <div class="route-details">
+                                <p>丝绸之路的印记，雪域高原的呼唤，体验古老文明与现代风情的交织。</p>
+                            </div>
+                        </article>
+                            
+                       
+                            <article class="route-item">
+                                <div class="route-thumbnail">
+                                   
+                                        <a href="https://zhuanlan.zhihu.com/p/144305787" target="_blank">
+                                        <img src="https://p0.ssl.qhimgs1.com/sdr/400__/t048621749ecbbd2f46.jpg" alt="路线3" />
+                                        <h3 class="route-title">路线3：北疆大环线</h3>
+                                    </a>
+                                </div>
+                                <div class="route-details">
+                                    <p>从雪山到草原，从湖泊到沙漠，北疆大环线带你领略最纯粹的自然之美。</p>
+                                </div>
+                            </article>
+                            
+                        </article>
+                       
+                    </div>
+                </section>
+              
+            </main>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	h2 {
-		text-align: center;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(
-			rgba(var(--accent-dark), 66%),
-			rgba(var(--accent-dark), 33%)
-		);
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style>
+            <main>
+              
+                 
+                <section class="user-stories">
+                    <h2>用户故事</h2>
+                    <div class="story-items">
+                      
+                        
+                        <article class="story-item">
+                           
+                            <a href="https://www.21rv.com/news/article/e5520ae6-c166-11ed-ab84-68cc6e7850f5" target="_blank">
+                                <img src="https://img01.wanfangche.com/upload/202303/13/ab15458e-c165-11ed-84cf-0242ac1e0101.jpg?x-oss-process=style/large" alt="用户1" class="story-avatar" />
+                                <h3>荒野日记|从香格里拉到“香格里拉”</h3>
+                            </a>
+                            <p>松木巴士</p>
+                        </article>
+                        
+                        <article class="story-item">
+                         
+                            <a href="https://www.21rv.com/news/article/c1aa60f7-8bfa-11ed-b2fe-6c92bf5c72fa" target="_blank">
+                                <img src="https://img01.wanfangche.com/upload/202301/04/b9cdb0fc-8bfa-11ed-b450-0242ac1f0003.jpg?x-oss-process=style/large-w" alt="用户1" class="story-avatar" />
+                                <h3>蹲在街边的房车旁，喝一杯咖啡，可好？</h3>
+                            </a>
+                            <p>21世纪房车网</p>
+                        </article>
+                        
+                        <article class="story-item">
+                           
+                            <a href="https://www.21rv.com/news/article/ade43f27-4a9e-11ed-b2fe-6c92bf5c72fa" target="_blank">
+                                <img src="https://img01.wanfangche.com/upload/202301/04/bd104f68-8bfa-11ed-b450-0242ac1f0003.jpg?x-oss-process=style/large-w" alt="用户1" class="story-avatar" />
+                                <h3>怎样才算会玩房车？老万用八年十年将房车玩明白了</h3>
+                            </a>
+                            <p>老万说房车</p>
+                        </article>
+                       
+                         
+                    </div>
+                </section>
+     
+            </main>
+
+   
+        </main>
+        <Footer />
+    </body>
+
+</html>

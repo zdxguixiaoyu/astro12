@@ -1,0 +1,10 @@
+/* src/styles/global.css */
+.banner {
+    background-image: url('/images/banner.jpg'); /* 替换为实际图片路径 */
+    height: 300px; /* 根据需要调整 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff7f7;
+}

@@ -1,0 +1,86 @@
+---
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "./contact.css";
+---
+
+<!doctype html>
+<html lang="zh">
+    <header class="header">
+        <div class="logo">兰州蜗牛房车网</div>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/">首页</a></li>
+                <li class="nav-item"><a href="/rent">租车</a></li>
+
+                <li class="nav-item"><a href="/information">资讯</a></li>
+
+                <li class="nav-item"><a href="/contact">联系我们</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <Header />
+        <head>
+            <meta charset="UTF-8" />
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+            />
+            <title>联系我们 - 兰州蜗牛房车网</title>
+            <link rel="stylesheet" href="/styles/global.css" />
+        </head>
+        <body>
+            <Header />
+          
+            <main class="contact-container">
+                <section class="contact-info">
+                    <h1>联系我们</h1>
+                    <p>欢迎随时联系我们以获取更多信息或提出您的需求。</p>
+                    <div class="contact-details">
+                        <h2>联系方式</h2>
+                        <ul>
+                            <li><strong>电话:</strong> 123-456-7890</li>
+                            <li>
+                                <strong>邮箱:</strong> contact@LZwoniufangche.com
+                            </li>
+                            <li><strong>地址:</strong> 甘肃省兰州市城关区</li>
+                        </ul>
+                    </div>
+                    <div class="map">
+                       
+                        <a
+                            href="https://map.360.cn/?k=%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE%E5%85%B0%E5%B7%9E%E5%B8%82%E5%9F%8E%E5%85%B3%E5%8C%BA&src=tab_www"
+                            target="_blank"
+                        >
+                            <img
+                                src="https://p1.ssl.qhimgs1.com/sdr/400__/t049705a9ec2042dc41.png"
+                                alt="我们的位置"
+                            />
+                        </a>
+                    </div>
+                </section>
+                <section class="contact-form">
+                    <h2>留言表单</h2>
+                    <form action="/submit-contact-form" method="post">
+                        <label for="name">姓名:</label>
+                        <input type="text" id="name" name="name" required />
+
+                        <label for="email">邮箱:</label>
+                        <input type="email" id="email" name="email" required />
+
+                        <label for="message">留言:</label>
+                        <textarea id="message" name="message" required
+                        ></textarea>
+
+                        <button type="submit">提交</button>
+                    </form>
+                </section>
+            </main>
+            <Footer />
+
+        </body>
+    </body>
+</html>

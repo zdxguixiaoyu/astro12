@@ -1,0 +1,377 @@
+/* src/pages/rent.css */
+.car-rent {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.search-form {
+    background: #faf6f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.search-form input[type="text"],
+.search-form input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* src/pages/rent.css */
+/* ...其他样式... */
+
+.search-form select {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+/* src/pages/rent.css */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* 其他样式根据需要添加 */
+
+/* 确保按钮和其他表单元素的样式与下拉框协调 */
+/* 其他样式 */
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    margin-bottom: 20px;
+    /* 行之间的间距 */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* 允许卡片换行 */
+    gap: 70px;
+    /* 卡片之间的间距 */
+}
+
+.car-card {
+    flex: 70px;
+    /* 每个卡片的基础宽度 */
+    max-width: calc(40% - 20px);
+    /* 最大宽度为三张卡片一行，减去间距 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.car-card img {
+    width: 80%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* 其他.car-card内元素的样式 */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    /* 与卡片内容的间距 */
+}
+
+.pagination ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 5px;
+    /* 分页链接之间的间距 */
+}
+
+.pagination ul li {
+    margin: 0;
+}
+
+.pagination ul li a {
+    padding: 8px 12px;
+    border: 1px solid #fcfcfc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination ul li a:hover,
+.pagination ul li a.active {
+    background-color: #ffffff;
+    border-color: #ccc;
+}
+
+/* 当前激活的页码样式 */
+.pagination ul li a.active {
+    font-weight: bold;
+}
+
+/* 已提供的header和footer样式 */
+.header,
+.footer {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    background-color: #ccc;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* 已提供的header和footer样式 */
+.header,
+.footer {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    background-color: #ccc;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* 应用于car-rent部分的样式 */
+.car-rent {
+    background-color: #ffffff;
+    /* 相同的背景渐变 */
+    padding: 4rem 2em;
+    /* 内边距 */
+    text-align: center;
+    /* 文本居中 */
+    color: rgb(9, 9, 9);
+    /* 文字颜色 */
+    border-radius: 8px;
+    /* 边框圆角 */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    /* 阴影 */
+    margin: 0 auto;
+    /* 内容水平居中 */
+    max-width: 1200px;
+    /* 最大宽度 */
+}
+
+.car-rent-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* 占满高度 */
+}
+
+.car-rent h1 {
+    font-size: 2.5em;
+    /* 标题字号 */
+    margin-bottom: 0.5em;
+    /* 标题下边距 */
+}
+
+.car-rent p {
+    font-size: 1.1em;
+    /* 段落字号 */
+    margin-bottom: 1em;
+    /* 段落下边距 */
+    line-height: 1.5;
+    /* 行高 */
+}
+
+/* 确保在小屏幕上也能良好显示 */
+@media (max-width: 768px) {
+    .car-rent {
+        padding: 2rem;
+        /* 减小内边距 */
+    }
+}
+
+/* src/pages/rent.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
+
+.rent-section {
+    padding: 2rem;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.rent-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.car-item {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.car-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0b0b0b;
+}
+
+/* 导航条样式 */
+.navigation {
+    display: flex;
+    /* 使用Flexbox布局 */
+    justify-content: center;
+    /* 导航项水平居中 */
+    list-style: none;
+    /* 移除列表项默认的标记 */
+    padding: 0;
+    /* 移除内边距 */
+    margin: 0;
+    /* 移除外边距 */
+}
+
+.nav-list {
+    display: flex;
+    /* 子列表也使用Flexbox布局 */
+}
+
+.nav-item {
+    margin: 25px;
+    /* 导航项之间的间距 */
+}
+
+/* 链接样式 */
+header a,
+footer a {
+    color: #fff;
+    /* 文字颜色 */
+    text-decoration: none;
+    /* 去除下划线 */
+    font-weight: 300;
+    /* 字体不加粗 */
+    transition: color 0.3s;
+    /* 鼠标悬浮时颜色变化的过渡效果 */
+}
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+    /* 鼠标悬浮时添加下划线 */
+}
+
+/* 已提供的header和footer样式 */
+.header,
+.footer {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    background-image: linear-gradient(to right, #fe8c00, #f83600);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* 导航样式 */
+.navigation {
+    display: flex;
+    /* 使用Flexbox布局 */
+    justify-content: center;
+    /* 导航项水平居中 */
+    align-items: center;
+    /* 垂直居中对齐 */
+    gap: 20px;
+    /* 导航项之间的间隔 */
+    list-style: none;
+    /* 移除列表项默认的标记 */
+    padding: 0;
+    /* 移除内边距 */
+    margin: 0;
+    /* 移除外边距 */
+}
+
+.nav-list {
+    display: flex;
+    /* 子列表也使用Flexbox布局 */
+    flex-wrap: wrap;
+    /* 允许换行 */
+}
+
+.nav-item {
+    /* 导航项样式，可以根据需要添加 */
+}
+
+/* 链接样式 */
+.nav-item a {
+    color: #fff;
+    /* 文字颜色 */
+    text-decoration: none;
+    /* 去除下划线 */
+    font-weight: normal;
+    /* 字体不加粗 */
+    transition: color 0.3s;
+    /* 鼠标悬浮时颜色变化的过渡效果 */
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+    /* 鼠标悬浮时添加下划线 */
+}

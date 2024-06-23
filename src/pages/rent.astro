@@ -1,0 +1,189 @@
+---
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import './rent.css'; 
+---
+
+<!doctype html>
+<html lang="zh">
+    <header class="header">
+        <div class="logo">兰州蜗牛房车网</div>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/">首页</a></li>
+                <li class="nav-item"><a href="/rent">租车</a></li>
+               
+                <li class="nav-item"><a href="/information">资讯</a></li>
+              
+                <li class="nav-item"><a href="/contact">联系我们</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <Header />
+    <main>
+        <section class="car-rent">
+            <h1>租车服务</h1>
+            <p>选择您的梦想房车，开始您的探险之旅。</p>
+           
+            <form class="search-form">
+         
+                <div class="form-row">
+                    <label for="car-model">车型</label>
+                    <select id="car-model" name="model">
+                        <option value="">请选择车型</option>
+                        <option value="voluntarilyA">自行式A</option>
+                        <option value="voluntarilyB">自行式B</option>
+                        <option value="business">商务型</option>
+                        <option value="trailerA">拖挂型A</option>
+                        <option value="trailerB">拖挂型B</option>
+                        <option value="trailerC">拖挂型C</option>
+                    </select>
+                </div>
+         
+                <div class="form-row">
+                    <label for="people-number">出行人数</label>
+                    <input type="number" id="people-number" name="people" placeholder="输入人数">
+                </div>
+            
+                 <div class="form-row">
+                    <label for="destination">目的地</label>
+                    <input type="text" id="destination" name="destination" placeholder="输入目的地">
+                </div>
+       
+                <div class="form-row">
+                    <label for="price-range">价格范围</label>
+                    <select id="price-range" name="price">
+                        <option value="">请选择价格范围</option>
+                        <option value="1000-2000">1000-2000元/天</option>
+                        <option value="2000-3000">2000-3000元/天</option>
+                        <option value="3000-4000">3000-4000元/天</option>
+                        <option value="5000+">5000元以上/天</option>
+                    </select>
+                </div>
+                <button type="submit">搜索</button>
+            </form>
+         
+        </section>
+    </main>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>租车服务 - 房车旅行</title>
+
+    <link rel="stylesheet" href="/styles/global.css">
+</head>
+<body>
+    <Header /> 
+    <main>
+       
+        <div class="search-container">
+          
+        </div>
+
+    
+        <div class="card-rows">
+         
+            <div class="card-row">
+               
+                <article class="car-card">
+                    <a href="https://www.rv28.com/thread-45805-1.html" target="_blank">
+                        <img src="https://www.rv28.com/data/attachment/forum/202405/12/102101rk2agaai3eicigr6.jpg" alt="车型1" class="car-image">
+                        <div class="card-content">
+                            <h3>大驰火星蛮牛双拓展</h3>
+                            <p>价格：2500元/天</p>
+                            <p>联系方式：123-456-7890</p>
+                            <p>提车地点：兰州市市七里河区</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="car-card">
+                    <a href="https://www.rv28.com/thread-33349-1.html" target="_blank">
+                        <img src="https://www.rv28.com/forum.php?mod=image&aid=408630&size=480x320&key=dc6afce6c0743d09" alt="车型2" class="car-image">
+                        <div class="card-content">
+                            <h3>黑系HQ21越野拖挂</h3>
+                            <p>价格：3000元/天</p>
+                            <p>联系方式：123-456-6690</p>
+                            <p>提车地点：北京市七里河区</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="car-card">
+                    <a href="https://www.rv28.com/thread-17175-1.html" target="_blank">
+                        <img src="https://www.rv28.com/data/attachment/forum/202209/14/134930yu7ium77vtqw8e17.jpg" alt="车型3" class="car-image">
+                        <div class="card-content">
+                            <h3>阿莫迪罗征服者</h3>
+                            <p>价格：3000元/天</p>
+                            <p>联系方式：123-486-3390</p>
+                            <p>提车地点：兰州市城关区</p>
+                        </div>
+                    </a>
+                </article>
+                
+            </div>
+
+            <div class="card-row">
+              
+                <article class="car-card">
+                    <a href="https://www.rv28.com/thread-42271-1.html" target="_blank">
+                        <img src="https://www.rv28.com/data/attachment/forum/202404/24/144417k2aoi3o013mfgvr2.jpg" alt="车型4" class="car-image">
+                        <div class="card-content">
+                            <h3> 瑞弗R900房车</h3>
+                            <p>价格：2300元/天</p>
+                            <p>联系方式：123-776-8890</p>
+                            <p>提车地点：兰州市城关区</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="car-card">
+                    <a href="https://www.rv28.com/thread-39475-1.html" target="_blank">
+                        <img src="https://www.rv28.com/data/attachment/forum/202304/08/211332si50g8zoga2zmejj.jpg" alt="车型5" class="car-image">
+                        <div class="card-content">
+                            <h3>自由乌托邦冰淇淋房车</h3>
+                            <p>价格：2200元/天</p>
+                            <p>联系方式：123-116-0990</p>
+                            <p>提车地点：兰州市安宁区</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="car-card">
+                    <a href="https://www.rv28.com/thread-44627-1.html" target="_blank">
+                        <img src="https://www.rv28.com/data/attachment/forum/202403/05/233310yllp1916vmtvadte.jpg" alt="车型6" class="car-image">
+                        <div class="card-content">
+                            <h3>长安峰景征程者房车</h3>
+                            <p>价格：1800元/天</p>
+                            <p>联系方式：123-456-7890</p>
+                            <p>提车地点：兰州市安宁区</p>
+                        </div>
+                    </a>
+                </article>
+               
+            </div>
+        </div>
+    </main>
+ 
+</body>
+</html>
+</main>
+
+ <div class="pagination">
+    <ul>
+        <li><a href="?page=1">1</a></li>
+        <li><a href="?page=2">2</a></li>
+        <li>...</li> 
+        <li><a href="?page=last">最后一页</a></li>
+    </ul>
+</div>
+</main>
+<Footer /> 
+</body>
+</html>
