@@ -1,14 +1,12 @@
-/* src/pages/information.css */
-/* 在information.css中 */
 .info-title {
-    font-size: 2.5em; /* 增大字体大小，您可以根据需要调整这个值 */
-    text-align: left; /* 文本居中 */
-    margin-top: 0.5em; /* 调整上边距 */
-    margin-bottom: 1em; /* 调整下边距 */
-    color: #333; /* 字体颜色，您可以根据需要调整 */
+    font-size: 2.5em;
+    text-align: left;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    color: #333;
 }
 
-/* 您可能还需要调整其他样式以确保整体布局的协调 */
+
 .info-section {
     padding: 20px;
     max-width: 1200px;
@@ -54,56 +52,56 @@
     color: #0056b3;
 }
 
-/* 响应式设计 */
+
 @media (max-width: 768px) {
     .info-article {
         text-align: center;
     }
 }
-/* 导航条样式 */
+
 .navigation {
     display: flex;
-    /* 使用Flexbox布局 */
+
     justify-content: center;
-    /* 导航项水平居中 */
+
     list-style: none;
-    /* 移除列表项默认的标记 */
+
     padding: 0;
-    /* 移除内边距 */
+
     margin: 0;
-    /* 移除外边距 */
+
 }
 
 .nav-list {
     display: flex;
-    /* 子列表也使用Flexbox布局 */
+
 }
 
 .nav-item {
     margin: 25px;
-    /* 导航项之间的间距 */
+
 }
 
-/* 链接样式 */
+
 header a,
 footer a {
     color: #fff;
-    /* 文字颜色 */
+
     text-decoration: none;
-    /* 去除下划线 */
+
     font-weight: 300;
-    /* 字体不加粗 */
+
     transition: color 0.3s;
-    /* 鼠标悬浮时颜色变化的过渡效果 */
+
 }
 
 header a:hover,
 footer a:hover {
     text-decoration: underline;
-    /* 鼠标悬浮时添加下划线 */
+
 }
 
-/* 已提供的header和footer样式 */
+
 .header,
 .footer {
     text-align: center;
@@ -115,52 +113,50 @@ footer a:hover {
     font-weight: bold;
 }
 
-/* 导航样式 */
+
 .navigation {
     display: flex;
-    /* 使用Flexbox布局 */
+
     justify-content: center;
-    /* 导航项水平居中 */
+
     align-items: center;
-    /* 垂直居中对齐 */
+
     gap: 20px;
-    /* 导航项之间的间隔 */
+
     list-style: none;
-    /* 移除列表项默认的标记 */
+
     padding: 0;
-    /* 移除内边距 */
+
     margin: 0;
-    /* 移除外边距 */
+
 }
 
 .nav-list {
     display: flex;
-    /* 子列表也使用Flexbox布局 */
+
     flex-wrap: wrap;
-    /* 允许换行 */
+
 }
 
-.nav-item {
-    /* 导航项样式，可以根据需要添加 */
-}
+.nav-item {}
 
-/* 链接样式 */
+
 .nav-item a {
     color: #fff;
-    /* 文字颜色 */
+
     text-decoration: none;
-    /* 去除下划线 */
+
     font-weight: normal;
-    /* 字体不加粗 */
+
     transition: color 0.3s;
-    /* 鼠标悬浮时颜色变化的过渡效果 */
+
 }
 
 .nav-item a:hover {
     text-decoration: underline;
-    /* 鼠标悬浮时添加下划线 */
+
 }
-/* src/pages/information.css */
+
 
 body {
     font-family: 'Arial', sans-serif;

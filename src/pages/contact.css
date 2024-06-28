@@ -1,47 +1,46 @@
-/* 导航条样式 */
 .navigation {
     display: flex;
-    /* 使用Flexbox布局 */
+
     justify-content: center;
-    /* 导航项水平居中 */
+
     list-style: none;
-    /* 移除列表项默认的标记 */
+
     padding: 0;
-    /* 移除内边距 */
+
     margin: 0;
-    /* 移除外边距 */
+
 }
 
 .nav-list {
     display: flex;
-    /* 子列表也使用Flexbox布局 */
+
 }
 
 .nav-item {
     margin: 25px;
-    /* 导航项之间的间距 */
+
 }
 
-/* 链接样式 */
+
 header a,
 footer a {
     color: #fff;
-    /* 文字颜色 */
+
     text-decoration: none;
-    /* 去除下划线 */
+
     font-weight: 300;
-    /* 字体不加粗 */
+
     transition: color 0.3s;
-    /* 鼠标悬浮时颜色变化的过渡效果 */
+
 }
 
 header a:hover,
 footer a:hover {
     text-decoration: underline;
-    /* 鼠标悬浮时添加下划线 */
+
 }
 
-/* 已提供的header和footer样式 */
+
 .header,
 .footer {
     text-align: center;
@@ -53,53 +52,51 @@ footer a:hover {
     font-weight: bold;
 }
 
-/* 导航样式 */
+
 .navigation {
     display: flex;
-    /* 使用Flexbox布局 */
+
     justify-content: center;
-    /* 导航项水平居中 */
+
     align-items: center;
-    /* 垂直居中对齐 */
+
     gap: 20px;
-    /* 导航项之间的间隔 */
+
     list-style: none;
-    /* 移除列表项默认的标记 */
+
     padding: 0;
-    /* 移除内边距 */
+
     margin: 0;
-    /* 移除外边距 */
+
 }
 
 .nav-list {
     display: flex;
-    /* 子列表也使用Flexbox布局 */
+
     flex-wrap: wrap;
-    /* 允许换行 */
+
 }
 
-.nav-item {
-    /* 导航项样式，可以根据需要添加 */
-}
+.nav-item {}
 
-/* 链接样式 */
+
 .nav-item a {
     color: #fff;
-    /* 文字颜色 */
+
     text-decoration: none;
-    /* 去除下划线 */
+
     font-weight: normal;
-    /* 字体不加粗 */
+
     transition: color 0.3s;
-    /* 鼠标悬浮时颜色变化的过渡效果 */
+
 }
 
 .nav-item a:hover {
     text-decoration: underline;
-    /* 鼠标悬浮时添加下划线 */
+
 }
 
-/* src/pages/contact.css */
+
 
 .contact-container {
     padding: 20px;
@@ -177,7 +174,7 @@ footer a:hover {
     background: #004494;
 }
 
-/* 响应式设计 */
+
 @media (max-width: 768px) {
 
     .contact-form input,
@@ -185,30 +182,35 @@ footer a:hover {
         width: calc(100% - 20px);
     }
 }
-/* src/pages/contact.css */
 
-/* 现有样式... */
 
-.ad-section, .private-service-section {
+
+
+.ad-section,
+.private-service-section {
     margin-bottom: 20px;
     text-align: center;
 }
 
-.ad-section h2, .private-service-section h2 {
+.ad-section h2,
+.private-service-section h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.ad-section p, .private-service-section p {
+.ad-section p,
+.private-service-section p {
     margin-bottom: 20px;
 }
 
-.ad-section a, .private-service-section a {
+.ad-section a,
+.private-service-section a {
     text-decoration: none;
     color: #007bff;
     transition: color 0.3s ease;
 }
 
-.ad-section a:hover, .private-service-section a:hover {
+.ad-section a:hover,
+.private-service-section a:hover {
     color: #0056b3;
 }

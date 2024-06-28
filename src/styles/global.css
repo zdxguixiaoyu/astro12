@@ -1,7 +1,7 @@
-/* src/styles/global.css */
+
 .banner {
-    background-image: url('/images/banner.jpg'); /* 替换为实际图片路径 */
-    height: 300px; /* 根据需要调整 */
+    background-image: url('https://img.tukuppt.com/bg_grid/23/26/76/qoq8Ve3ok5.jpg!/fh/350'); /* 替换为实际图片路径 */
+    height: 300px; 
     display: flex;
     justify-content: center;
     align-items: center;
